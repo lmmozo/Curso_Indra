@@ -1,0 +1,23 @@
+<p>
+  <select [(ngModel)] = "provinciaSeleccionada">
+    <option *ngFor = "let provincia of provincias" [ngValue] = "provincia">{{provincia.nombre}}</option>
+  </select>
+  <br>
+  <label>{{provinciaSeleccionada.nombre}}</label>
+</p>
+<p>
+  <input type="radio" name="localidad" [(ngModel)] = "localidad" value="Berm"><label>Bermillo</label>
+  <input type="radio" name="localidad" [(ngModel)] = "localidad" value="Zamo"><label>Zamora</label>
+  <br>
+  <label>{{localidad}}</label>
+</p>
+<p>
+  <input (change)="addLenguaje()" type="checkbox" [(ngModel)] = "angular"> <label>Angular</label>
+  <br>
+  <input (change)="addLenguaje()" type="checkbox" [(ngModel)] = "javascript"> <label>JavaScript</label>
+  <br>
+  <li *ngFor="let lenguaje of lenguajes">
+      <label>Lenguaje: {{lenguaje}}</label>  
+  </li>
+</p>
+

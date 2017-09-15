@@ -1,0 +1,8 @@
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  <button *ngIf ="!mostrar"(click)="mostrar=true">leer mas</button>
+  <button *ngIf ="mostrar"(click)="mostrar=false">leer menos</button>
+</p>
+<p *ngIf="mostrar">  
+  Voluptas, tempore suscipit natus officiis cumque laboriosam, vitae dolorum officia voluptatum ipsam excepturi at asperiores reiciendis placeat ab sint dignissimos aperiam error.
+</p>

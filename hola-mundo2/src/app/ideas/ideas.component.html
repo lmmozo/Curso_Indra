@@ -1,0 +1,12 @@
+<p>
+  Una lista de ideas para cobrar más:
+</p>
+<form>
+  <label>Dame una idea</label>
+  <input type="text" name= "idea" [(ngModel)]="idea" />
+  <button (click)="addIdea()">Añadir Idea</button>
+</form>
+<li *ngFor="let idea of aIdea">
+  <label>Idea: {{idea}}</label>  
+</li>
+

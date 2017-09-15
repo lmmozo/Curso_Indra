@@ -1,0 +1,10 @@
+
+<form>
+  <label for="nombre">Introduce el nombre: </label>
+  <input type="text" name= "nombre" [(ngModel)]="nombre" />
+  <button (click)="nombre=''">Borrar Formulario</button>
+</form>
+
+<p>
+  Hola: {{nombre}}
+</p>
